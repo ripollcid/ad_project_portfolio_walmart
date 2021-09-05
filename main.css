@@ -1,0 +1,371 @@
+/* ------------------------- CSS RESET ------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+/* ------------------------- FONTS ------------------------- */
+@font-face {
+	font-family: 'MyriadProRegular';
+	src: url('fonts/MyriadProRegular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'MyriadProBold';
+	src: url('fonts/MyriadProBold.woff') format('woff');
+}
+
+/* ------------------------- GENERAL ------------------------- */
+body {
+	margin: 0;
+	background-color: grey;
+}
+
+sup {
+	position: relative;
+	top: -3px;
+	vertical-align: top;
+	font-size: 75%;
+}
+
+b {
+	font-family: 'MyriadProBold';
+	color: #FDC13B;
+}
+
+p {
+	font-family: 'MyriadProRegular';
+}
+
+/* ------------------------- AD ELEMENTS ------------------------- */
+#background {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+
+#frame_intro {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#frame_intro_rectangle {
+	position: absolute;
+	width: 280px;
+	height: 156px;
+	left: 10px;
+	top: 0px;
+	overflow: hidden;
+}
+
+#frame_intro_text {
+	position: absolute;
+	width: auto;
+	height: auto;
+	left: 0px;
+	top: 0px;
+}
+
+#frame_intro_logo {
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#frame_intro_person {
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#frame_intro_smileyFaceTradeMark {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	overflow: hidden;
+	top: 180px;
+	left: 280px;
+	color: #000000;
+	font-family: 'Arial';
+	font-size: 8px;
+	opacity: 0;
+}
+
+#frame_carousel {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#footer {
+	position: absolute;
+	width: 300px;
+	height: 82px;
+	left: 0px;
+	top: 168px;
+	background-color: #FFFFFF;
+	overflow: visible;
+}
+
+#logo {
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#footer_cta {
+	position: absolute;
+	display: table-cell;
+	text-align: center;
+	padding-top: 5px;
+	font-family: 'MyriadProBold';
+	line-height: 26px;
+	width: 111px;
+	height: 26px;
+	left: 173px;
+	top: 43px;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+#border {
+	position: absolute;
+	width: 298px;
+	height: 248px;
+	top: 0px;
+	left: 0px;
+	border: 1px solid #000000;
+	pointer-events: none;
+}
+
+.price_dollarSign {
+	position: absolute;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	align: center;
+	text-align: center;
+	width: 18px;
+	height: 55px;
+	font-size: 24px;
+	font-family: 'MyriadProBold';
+}
+
+.price_centSign {
+	position: absolute;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	align: center;
+	text-align: center;
+	width: 18px;
+	height: 55px;
+	font-size: 24px;
+	border-left: 1px solid #CCCCCC;
+	font-family: 'MyriadProBold';
+}
+
+.price_dollars {
+	position: absolute;
+	background-color: #FFFFFF;
+	padding-top: 8px;
+	align: center;
+	text-align: center;
+	width: 30px;
+	height: 55px;
+	border-left: 1px solid #CCCCCC;
+	font-size: 52px;
+	font-family: 'MyriadProBold';
+}
+
+.price_cents {
+	position: absolute;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	align: center;
+	text-align: center;
+	width: 17px;
+	height: 55px;
+	border-left: 1px solid #CCCCCC;
+	font-size: 28px;
+	font-family: 'MyriadProBold';
+}
+
+.price_centsInit {
+	position: absolute;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	align: center;
+	text-align: center;
+	width: 17px;
+	height: 55px;
+	font-size: 28px;
+	font-family: 'MyriadProBold';
+}
+
+#smileyFace_container {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	pointer-events: none;
+}
+
+#hitArea {
+	z-index: -99;
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	left: 0px;
+	top: 0px;
+	background-color: #FFFFFF;
+	opacity: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
